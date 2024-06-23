@@ -123,8 +123,12 @@
 
 			if ( st > 200 ) {
 				navbar.addClass('scrolled');
+				$('#logo_color').show();
+				$('#logo_white').hide();
 			} else {
 				navbar.removeClass('scrolled awake');
+				$('#logo_color').hide();
+				$('#logo_white').show();
 			}
 
 			if ( navbar.hasClass('scrolled') && st > 300 ) {
@@ -327,6 +331,7 @@
 		clickMenu();
 		smoothScroll();
 		portfolioMasonry();
+
 	});
 
 	
