@@ -1,6 +1,15 @@
 (function() {
 	'use strict';
 
+	if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+		document.getElementById("logo_color").href = "http://localhost/arinsuga/";
+		document.getElementById("logo_white").href = "http://localhost/arinsuga/";
+	} else {
+		document.getElementById("logo_color").href = "https://arinsuga.com/";
+		document.getElementById("logo_white").href = "https://arinsuga.com/";
+	}
+		
+
 	/*----------------------------------------
 		Detect Mobile
 	----------------------------------------*/
